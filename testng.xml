@@ -13,13 +13,13 @@
 		</classes>
 	</test> <!-- Test -->
 	
-	<test name="Login Test">
+	<test name="Register Test">
 		<classes>
 			<class name="com.maddison.tests.RegisterTest" />
 		</classes>
 	</test> <!-- Test -->
 	
-	<test name="Login Test">
+	<test name="Account Test">
 		<classes>
 			<class name="com.maddison.tests.AccountTest" />
 		</classes>
