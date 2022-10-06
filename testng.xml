@@ -12,5 +12,17 @@
 			<class name="com.maddison.tests.LoginTest" />
 		</classes>
 	</test> <!-- Test -->
+	
+	<test name="Login Test">
+		<classes>
+			<class name="com.maddison.tests.RegisterTest" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Login Test">
+		<classes>
+			<class name="com.maddison.tests.AccountTest" />
+		</classes>
+	</test> <!-- Test -->
 
 </suite> <!-- Suite -->
