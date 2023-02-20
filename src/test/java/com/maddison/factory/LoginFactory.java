@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.maddison.pages.BasePage;
+import com.maddison.utils.logs.BasePage;
 import com.maddison.utils.logs.Log;
 
 public class LoginFactory extends BasePage {

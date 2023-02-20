@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import com.github.javafaker.Faker;
+import com.maddison.utils.logs.BasePage;
 import com.maddison.utils.logs.Log;
 
 public class RegisterPage extends BasePage {

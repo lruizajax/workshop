@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import com.maddison.pages.BasePage;
+import com.maddison.utils.logs.BasePage;
 import com.maddison.utils.logs.Log;
 
 public class AccountFactory extends BasePage {

@@ -5,6 +5,7 @@ import static org.testng.Assert.assertEquals;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.maddison.utils.logs.BasePage;
 import com.maddison.utils.logs.Log;
 
 public class AccountPage extends BasePage {

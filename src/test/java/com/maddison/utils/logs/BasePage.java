@@ -1,4 +1,4 @@
-package com.maddison.pages;
+package com.maddison.utils.logs;
 
 import java.time.Duration;
 
@@ -12,7 +12,7 @@ public class BasePage {
 
 	protected WebDriver driver;
 	WebDriverWait wait;
-	int timeoutSec = 10;
+	int timeoutSec = 15;
 
 	public BasePage(WebDriver driver) {
 		this.driver = driver;

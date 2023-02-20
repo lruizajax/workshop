@@ -3,6 +3,7 @@ package com.maddison.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.maddison.utils.logs.BasePage;
 import com.maddison.utils.logs.Log;
 
 public class LoginPage extends BasePage {
@@ -14,6 +15,7 @@ public class LoginPage extends BasePage {
 	By Password = By.id("pass");
 	By Login = By.id("send2");
 	By Already = By.xpath("/html/body/div/div[2]/div[2]/div/div/div[2]/form/div/div[2]/div[1]/h2");
+	By Forgot = By.linkText("Forgot Your Password?");
 
 	/**
 	 * Constructor(s)
@@ -44,6 +46,10 @@ public class LoginPage extends BasePage {
 		type(Password, password);
 		submit(Login);
 		Log.info("Entering your profile");
+	}
+	
+	public boolean verifyForgotPass() {
+		return isDisplayed(Forgot);
 	}
 
 }

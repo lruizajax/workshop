@@ -1,6 +1,7 @@
-package com.maddison.tests;
+package com.maddison.utils.logs;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -9,10 +10,6 @@ import com.maddison.pages.AccountPage;
 import com.maddison.pages.HomePage;
 import com.maddison.pages.LoginPage;
 import com.maddison.pages.RegisterPage;
-import com.maddison.utils.logs.Log;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 
 public class BaseTest {
 
@@ -29,7 +26,8 @@ public class BaseTest {
     @BeforeClass
     public void setup() {
         Log.info("Tests are starting ... ");
-        driver = WebDriverManager.edgedriver().create();
+        //driver = WebDriverManager.edgedriver().create();
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
     }
 

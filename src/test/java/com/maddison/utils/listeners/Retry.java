@@ -9,14 +9,13 @@ import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
 import com.aventstack.extentreports.Status;
-import com.maddison.tests.BaseTest;
+import com.maddison.utils.logs.BaseTest;
 
 public class Retry implements IRetryAnalyzer {
 
 	private int count = 0;
 	private static int maxTry = 1;
 
-	@Override
 	public boolean retry(ITestResult iTestResult) {
 		if (!iTestResult.isSuccess()) {
 			if (count < maxTry) {

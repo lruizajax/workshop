@@ -3,6 +3,7 @@ package com.maddison.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.maddison.utils.logs.BasePage;
 import com.maddison.utils.logs.Log;
 
 public class HomePage extends BasePage {
@@ -48,4 +49,5 @@ public class HomePage extends BasePage {
 		click(linkAccount);
 		click(linkSingIn);
 	}
+
 }
